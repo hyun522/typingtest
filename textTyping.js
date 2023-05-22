@@ -1,7 +1,8 @@
 function textTyping(){
   console.log("타이핑효과 잘되네")
   let a = 50 + 30;
-  console.log("타이핑효과 잘되네")
+  let b = 550 + 30;
+  console.log("타이핑효과 정말 집에 가고 싶네")
   console.log("타이핑효과 잘되네")
   console.log("타이핑효과 잘되네")
   

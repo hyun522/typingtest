@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>타이핑 효과 응용</title>
+    <!-- **프린트 할때 Publisher에 대한 예 부터 숫자 넣어서 필기 -->
+    <style>
+        * { margin:0; padding:0;}
+        .text { color:green; font-size:70px; position:absolute; left:50%; top:50%; transform:translate(-50%,-50%);}
+        .text::after{ content:"|"; color:red;
+                        animation:cursor .5s linear infinite;}
+            /* after : text란 부모안에 마지막번쨰 자식을 뜻함 */
+        .text .child { color:orange;}
+        /* 해석 위 -> 아래 순이라서 마지막 번째 효과가 화면에 나타남 */
+
+        @keyframes cursor { 
+            0% { opacity:1;}
+            100% { opacity:0;}
+        }
+    </style>
+</head>
+<body>
+    <div class="text"></div>
+
+    <!-- 순서 1-> 2 
+    해서) 파일이 연결됐군 그리고 함수를 실행해보겠다!  -->
+    
+    <!-- 1 -->
+    <script src="textTyping.js"></script>
+    <!-- 2 -->
+    <script>
+        textTyping();
+        //전달인자값은 넣지 않겠다 현재 필요 없음 
+    </script>
+
+
+
+</body>
+</html>

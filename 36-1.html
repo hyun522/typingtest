@@ -8,6 +8,7 @@
     <!-- **프린트 할때 Publisher에 대한 예 부터 숫자 넣어서 필기 -->
     <style>
         * { margin:0; padding:0;}
+         a { text-decoration:none;}
         .text { color:green; font-size:70px; position:absolute; left:50%; top:50%; transform:translate(-50%,-50%);}
         .text::after{ content:"|"; color:red;
                         animation:cursor .5s linear infinite;}
@@ -17,6 +18,7 @@
 
         @keyframes cursor { 
             0% { opacity:1;}
+            50% { opacity:0.5;}
             100% { opacity:0;}
         }
     </style>

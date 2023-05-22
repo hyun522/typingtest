@@ -1,5 +1,6 @@
 function textTyping(){
   console.log("타이핑효과 잘되네")
+  let a = 50 + 30;
   
   /* I'm a 직업군 
                   ↑ 나타나고 지워져야함 
